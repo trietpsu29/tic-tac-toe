@@ -8,11 +8,14 @@ This is the tenth project from [The Odin Project](https://github.com/TheOdinProj
 
 ## 🎮 Gameplay Instructions
 
-- Two players take turns entering a number from **1 to 9** to place their symbol (`X` or `O`) on the board.
-- The board updates after each move and displays the current state in a 3×3 grid.
-- The game automatically checks for a **winner** or a **draw** after every turn.
-- A new game starts immediately after a win or draw.
-- You can **quit anytime** by pressing `Ctrl + C`.
+- Two players take turns choosing a number from **1 to 9** to place their symbol (`X` or `O`) on the board.
+- The board updates after each move and shows the current 3×3 grid.
+- The game checks for a **winner** or a **draw** after every turn.
+- The winning player gets **1 point**, and scores are shown after each round.
+- A new game starts automatically after a win or draw.
+- Press `Ctrl + C` to quit the game at any time.
+- Make sure to enter a number between **1 and 9** that hasn't been taken.
+- Invalid input may cause the game to stop working.
 
 ## 🛠️ Skills Learned
 
