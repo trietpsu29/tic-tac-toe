@@ -36,13 +36,23 @@ class Game
       next unless curr[a] == curr[b] && curr[b] == curr[c]
 
       winner = curr[a]
+      if @player1.symbol == winner
+        @player1.score += 1
+      else
+        @player2.score += 1
+      end
+
       puts "#{winner} wins the game!"
+      @player1.display
+      @player2.display
       puts 'New game starts:'
       return true
     end
 
     if curr.values.all? { |v| v.is_a?(String) }
       puts "It's a draw!"
+      @player1.display
+      @player2.display
       puts 'New game starts:'
       return true
     end

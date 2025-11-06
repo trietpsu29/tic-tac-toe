@@ -11,4 +11,8 @@ class Player
   def draw(board, pos)
     board.draw(@symbol, pos)
   end
+
+  def display
+    puts "#{@symbol} Score: #{@score}"
+  end
 end
